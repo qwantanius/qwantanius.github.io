@@ -44,6 +44,29 @@
 <br> the idea of zonning is that different zones are used for
 <br> for different data 
 <br> <a href="https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/Diskdrive.html">More about ZBR</a>
+<br>
+<br> SEEK TIME
+<br> Read-and-write HEAD's of the disk can move HORIZONTALY
+<br> from TRACK to TRACK (closer or more far from/to disk center)
+<br> SEEK TIME its a time requried to move HEAD from TRACK to TRACK
+<br> 
+<br> ROTATIONAL DELAY
+<br> waiting time while disk will rotate needed sector under the disk HEAD
+<br> rotational delay is measuer in REVOLUTIONS PER MINUTE - RPM
+<br> OTHER DEFINITON's:
+<br> - Required time for needed data to rotate to positioned HEAD
+<br> - HALF of the time needed for one full rotation of disk, which is 
+<br>   average time for disered data to rotate around to read/write HEAD
+<br>
+<br> ACESS TIME 
+<br> Acess time can be simply defined using formula
+<br> ACESS TIME = SEEK TIME + ROTATIONAL DELAY
+<br> WARNING: some resources tells, that access time 
+<br> should also contain DATA TRANSFER TIME
+<br> which can be defined as:
+<br> TRANSFER TIME = DATA TO BE TRANSFERED / TRANSFER RATE
+<br> where TRANSFER RATE = (amount of sectors in each track) * (amount of heads in the disk)
+<br> 
 <br> - - - - - - - - - - - -
 <br> RESOURCES
 <br> https://en.wikipedia.org/wiki/Hard_disk_drive
