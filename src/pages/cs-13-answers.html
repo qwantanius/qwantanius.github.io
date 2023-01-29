@@ -7,25 +7,36 @@
 <br> by J. Glenn Brookshear and Dennis Brylow
 <br>
 <br> ID TEMPLATE RULE:
-<br> TYPE:PAGE_NUMBER:QUESTION_NUMBER
-<br> When TYPE = Q - means question
-<br> When TYPE = A - means answer
-<br> EXAMPLE: 
-<br> answer for question Q:51:4 (which may be found at page 54, as 
-<br> 4th question) can be found at answer with ID A:51:4
+<br> PAGE_NUMBER:QUESTION_NUMBER
 <br>
 <br> ---------(Q:51:1)
 <br> if the memory cell whose address is 5 contains the value 8, 
 <br> what is the difference between writing the value 5 into 
 <br> cell number 6 and moving the contents of cell number 5 into cell number 6?
+<br> when we moving a content from cell 5 to 6, the value of 
+<br> ANSWER:
+<br> cell number 6 will be 8, as 8 is a content of cell number 5 
+<br> BUT, when we write NUMBER 5 into cell number 6, we just save a number into a CELL
 <br> ---------(Q:51:2)
 <br> Suppose you want to interchange the values stored in memory
 <br> cells 2 and 3. What is wrong with the following sequence of steps:
 <br> Step 1. Move the contents of cell number 2 to cell number 3.
 <br> Step 2. Move the contents of cell number 3 to cell number 2.
+<br> ANSWER:
+<br> This implementation will make a data leak - we suppose to defined a TMP cell
+<br> for saving interchanged data, here pseudo-code algorithm:
+<br> MOVE DATA FROM CELL(2) TO TMP CELL
+<br> MOVE DATA FROM CELL(3) TO CELL(2) <- this step was missing
+<br> MOVE DATA FROM TMP CELL TO CELL(3)
 <br> ---------(Q:51:3)
 <br> Design a sequence of steps that correctly interchanges the
 <br> contents of these cells. If needed, you may use additional cells.
+<br> ANSWER:
+<br> see Q:51:2
 <br> ---------(Q:51:4)
 <br> How many bits would be in the memory of a computer with 4KB memory
+<br> ANSWER:
+<br> 1KB = 1024 BYTES
+<br> 1 BYTE = 8 BITS
+<br> => 4 KB = 4*1024*8 = 32768 BITES
 
