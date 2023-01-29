@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>
+      hex2bin and bin2hex
+    </title>
+  </head>
+  <body>
+    <br>
+      <a href="https://qwantanius.github.io/index.html">[HOME] </a>
+    </br>
+    <br>
+    <br> WARN: floating point numbers under construction
+    <br> WARN: STRING and other types under construction
+    <br>
+    <br> To convert HEX to BIN as A NATURAL UNSIGNED DECIMAL NUMBER:
+    <br> take the HEX NUMBER SYMBOL
+    <br> 0xF123
+    <br> Separate and convert each symbol to bin:
+    <br> F - 1111
+    <br> 1 - 0001
+    <br> 2 - 0010
+    <br> 3 - 0011
+    <br> ANSWER: HEX(F123) = BIN(1111 0001 0010 0011)
+    <br>
+    <br> To convert BIN to HEX
+    <br> Devide BINARY number by 4 symbols from right side
+    <br> 101001 lets take as an example number
+    <br> which will not devide perfectly by 4
+    <br> in this case just divide and process rest
+    <br> part as is:
+    <br> Deviding 101001 into 10 1001:
+    <br> 10   - 2 in decimal - 2 in hex
+    <br> 1001 - 9 in decimal - 9 in hex 
+    <br> result: BIN(101001) = HEX(29)
+    <br> 
+    <br> another example
+    <br> A1 in HEX
+    <br> A = 10 in decimal = 1011 in bin
+    <br> 1 = 1 in decimal = 1 in bin
+    <br>  as in HEX numbers should be taken
+    <br> from right side to the left with in 
+    <br> interval of 4 symbols, we should 
+    <br> consider this information when preparing 
+    <br> our answer:
+    <br> 10100001
+  </body>
+</html>
