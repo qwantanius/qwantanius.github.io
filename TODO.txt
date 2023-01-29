@@ -1,0 +1,65 @@
+x84 - family of processors 
+ARM - phones
+AVR - microcontrollers
+each of arhitectures supports own set of commands
+
+-------------------------------
+8086-80286   | 16bit  | 
+80386        | 32 bit | x86 starts here
+AMD64==EM64T | 64 bit | x86-64 
+-------------------------------
+AMD developed full back capability x86-64 arhictecure for
+supporting 64 bits processor. intel bought a licence and 
+changed it a little bit 
+AMD 64 architecture = AMD64
+Intel 64 arhitecture =  EM64T
+(for high capability servers systems they use Intel's own arhitecutre AI64)
+
+razrjadnost - maximum amount of bit processor can process
+
+
+register size should be KRATEN for RAM size
+
+AL=8bit    | 8
+AH=8bit    | 8
+AX=AL+AH   | 16
+EAX=16+AX  | x86
+RAX=32+EAX | x86-64
+
+special registers are:
+registers for
+ storing memory addresses - ss, cs, ds
+registers for stack working - bp, sp (showing frame beginning and top of stack)
+flag registers - FLAGS stores result of the operations before
+ip - insturction pointer - stores pointer to next command to be executed
+
+opcode|command|instruction
+MOV AX, 7;
+
+
+address translation mechanism
+processor can work in many stages
+
+16bit - real  address mode without any protection
+32bit - protected mode with addresses translation
+64bit - only after protected mode
+
+by documentation AMD and intel declares only 2 mode 
+of execution
+legacy mode  or ia32 by intel
+long mode  or ia32e by intel
+
+processors privelegies mode level
+this level represents access allowense
+to different processors resourses
+
+16 bit supports only BIOS
+there are no need to protect
+
+0 level - OS level, full access to processor
+1 level - restrictions from 0
+2 level - restrictions from 0, 1
+3 level - restrictions from 0, 1, 2
+usually only 0 and 3 used
+
+RAM spliited into segments
