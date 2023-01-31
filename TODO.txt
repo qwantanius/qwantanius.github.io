@@ -63,3 +63,8 @@ there are no need to protect
 usually only 0 and 3 used
 
 RAM spliited into segments
+
+
+
+The Turk - von Kempelen's chess machine
+Ram BUFFERS
